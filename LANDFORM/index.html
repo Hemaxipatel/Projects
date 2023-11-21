@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap icon cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css">
+    <!-- animate.style cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- navigation -->
+    <header>
+        <div class="container-fluid p-0 header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container py-2 ">
+                    <a class="navbar-brand logo" href="#">LANDFORM</a>
+                    <!-- button for responsive -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navigation_bar" aria-controls="navigation_bar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navigation_bar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Services</a></li>
+                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Team</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Single
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Team Single</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Single</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Store
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">ECommerce</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">ECommerce Single</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">ECommerce Cart</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Account
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#signin">Sign In</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#signup">Sign Up</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- home page -->
+    <section class="homepage">
+        <div class="container-fluid p-0 m-0">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider1">
+                        <div class="container py-5">
+                            <div class="row text-white fw-bold py-5">
+                                <p>Garden Care</p>
+                                <p class="display-1 fw-bolder">High Quality <br> and Guaranted</p>
+                                <p class="pb-5">Lorem ipsum, dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="slider-text pb-3">
+                            <div class="row text-center">
+                                <div class="col-3 text-white">Slider 1</div>
+                                <div class="col-3 text-white">Slider 2</div>
+                                <div class="col-3 text-white">Slider 3</div>
+                                <div class="col-3 text-white">Slider 4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider2">
+                        <div class="container py-5">
+                            <div class="row text-white fw-bold py-5">
+                                <p>Landscape Design</p>
+                                <p class="display-1 fw-bolder">Unique Looking <br> Outdoor</p>
+                                <p class="pb-5">Lorem ipsum, dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="slider-text pb-3">
+                            <div class="row text-center">
+                                <div class="col-3 text-white">Slider 1</div>
+                                <div class="col-3 text-white">Slider 2</div>
+                                <div class="col-3 text-white">Slider 3</div>
+                                <div class="col-3 text-white">Slider 4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider3">
+                        <div class="container py-5">
+                            <div class="row text-white fw-bold py-5">
+                                <p>Garden Care</p>
+                                <p class="display-1 fw-bolder">High Quality and<br> Guaranted</p>
+                                <p class="pb-5">Lorem ipsum, dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="slider-text pb-3">
+                            <div class="row text-center">
+                                <div class="col-3 text-white">Slider 1</div>
+                                <div class="col-3 text-white">Slider 2</div>
+                                <div class="col-3 text-white">Slider 3</div>
+                                <div class="col-3 text-white">Slider 4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider4">
+                        <div class="container py-5">
+                            <div class="row text-white fw-bold py-5">
+                                <p>Landscape Design</p>
+                                <p class="display-1 fw-bolder">Unique Looking <br> Outdoor</p>
+                                <p class="pb-5">Lorem ipsum, dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="slider-text pb-3">
+                            <div class="row text-center">
+                                <div class="col-3 text-white">Slider 1</div>
+                                <div class="col-3 text-white">Slider 2</div>
+                                <div class="col-3 text-white">Slider 3</div>
+                                <div class="col-3 text-white">Slider 4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar mb-5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- farming grid -->
+    <section class="farming-grid">
+        <div class="container my-5 p-0">
+            <div class="row g-3 py-5 text-center">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                    <div class="f-grid">
+                        <div class="farming">
+                            <img src="images/g1.jpg" alt="" class="img-fluid">
+                            <div class="farming-t">
+                                <div class="inner-txt">
+                                    <h5 class="text-uppercase">designing & farming</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="farming-b-txt text-center p-1">
+                            <h4 class="text-capitalize"><a href="" class="text-black fw-bold">designing &
+                                    farming</a>
+                            </h4>
+                            <p class="text-muted fs-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Expedita,
+                                impedit dolore. Quis
+                                voluptate consequuntur provident sequi maiores facilis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                    <div class="f-grid">
+                        <div class="farming">
+                            <img src="images/g2.jpg" alt="" class="img-fluid">
+                            <div class="farming-t">
+                                <div class="inner-txt">
+                                    <h5 class="text-uppercase">plant caring</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="farming-b-txt text-center p-1">
+                            <h4 class="text-capitalize"><a href="" class="text-black fw-bold">plant caring</a>
+                            </h4>
+                            <p class="text-muted fs-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Expedita,
+                                impedit dolore. Quis
+                                voluptate consequuntur provident sequi maiores facilis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-12 col-md-12 col-12 d-flex justify-content-center">
+                    <div class="f-grid">
+                        <div class="farming">
+                            <img src="images/g3.jpg" alt="" class="img-fluid">
+                            <div class="farming-t">
+                                <div class="inner-txt">
+                                    <h5 class="text-uppercase">grass trimming</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="farming-b-txt text-center p-1">
+                            <h4 class="text-capitalize"><a href="" class="text-black fw-bold">grass trimming</a>
+                            </h4>
+                            <p class="text-muted fs-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Expedita,
+                                impedit dolore. Quis
+                                voluptate consequuntur provident sequi maiores facilis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about farming -->
+    <section class="about-farming">
+        <div class="container p-0">
+            <div class="row py-5">
+                <div class="col-lg-12 text-center">
+                    <h4 class="text-capitalize fw-bold">who we are</h4>
+                    <h1 class="fw-bold">About Our LandForm</h1>
+                </div>
+            </div>
+
+            <!-- list table -->
+            <div class="row pb-5">
+                <div class="col-5">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <div class="about-farm-tab text-capitalize fs-5 fw-bold">
+                            <a class="list-group-item list-group-item-action active" id="list-growth-list"
+                                data-bs-toggle="list" href="#growth" role="tab" aria-controls="list-home">plant
+                                growth</a>
+                            <a class="list-group-item list-group-item-action" id="list-caring-list"
+                                data-bs-toggle="list" href="#caring" role="tab" aria-controls="list-profile">plant
+                                caring</a>
+                            <a class="list-group-item list-group-item-action" id="list-trimming-list"
+                                data-bs-toggle="list" href="#trimming" role="tab" aria-controls="list-messages">grass
+                                trimming</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="growth" role="tabpanel"
+                            aria-labelledby="list-growth-list">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12 pb-5">
+                                    <h1 class="text-capitalize w-75">elegant look for unique looking outdoor</h1>
+                                    <p class="fs-5 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Cupiditate
+                                        deleniti, in at nulla, culpa esse tenetur pariatur repellat ipsum,
+                                        cum eum! Saepe repellat fugiat, omnis natus voluptatem quos alias
+                                        consequatur!</p>
+                                    <div class="link">
+                                        <a href="">Read More<i class="bi bi-chevron-double-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <img src="images/img1.jpg" alt="" class="img-fluid imgfarming">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="caring" role="tabpanel" aria-labelledby="list-caring-list">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <img src="images/img2.jpg" alt="" class="img-fluid imgfarming">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12 pb-5">
+                                    <h1 class="text-capitalize w-75">creating an outdoor environment unique & fun</h1>
+                                    <p class="fs-5 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Cupiditate
+                                        deleniti, in at nulla, culpa esse tenetur pariatur repellat ipsum,
+                                        cum eum! Saepe repellat fugiat, omnis natus voluptatem quos alias
+                                        consequatur!</p>
+                                    <div class="link">
+                                        <a href="">Read More<i class="bi bi-chevron-double-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="trimming" role="tabpanel" aria-labelledby="list-trimming-list">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12 pb-5">
+                                    <h1 class="text-capitalize w-75">elegant look for unique looking outdoor</h1>
+                                    <p class="fs-5 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Cupiditate
+                                        deleniti, in at nulla, culpa esse tenetur pariatur repellat ipsum,
+                                        cum eum! Saepe repellat fugiat, omnis natus voluptatem quos alias
+                                        consequatur!</p>
+                                    <div class="link">
+                                        <a href="">Read More<i class="bi bi-chevron-double-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <img src="images/img3.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ask your self -->
+    <section class="yourself">
+        <div class="container py-5 p-0">
+            <div class="row pb-5">
+                <div class="col-lg-12 text-center text-capitalize">
+                    <h5 class="fw-bold">ask your self</h5>
+                    <h1 class="pb-4">why choose us?</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-auto">
+                        <div class="about-self">
+                            <div class="icon">
+                                <span class="fa-solid fa-users"></span>
+                            </div>
+                            <div class="y-text text-center py-3">
+                                <h3 class="text-capitalize d"><a href="">expert team</a></h3>
+                                <p>Lorem ipsum dolor sitamet consectetur, adipisicing elit. Corrupti,
+                                    suscipit quaerat.
+                                    Laboriosam, nostrum praesentium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-auto">
+                        <div class="about-self">
+                            <div class="icon">
+                                <i class="bi bi-shield-shaded"></i>
+                            </div>
+                            <div class="y-text text-center py-3">
+                                <h3 class="text-capitalize d"><a href="">certified expert</a></h3>
+                                <p>Lorem ipsum dolor sitamet consectetur, adipisicing elit. Corrupti,
+                                    suscipit quaerat.
+                                    Laboriosam, nostrum praesentium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-auto">
+                        <div class="about-self">
+                            <div class="icon">
+                                <span class="fa fa-money-bill-1"></span>
+                            </div>
+                            <div class="y-text text-center py-3">
+                                <h3 class="text-capitalize d"><a href="">affordable pricing</a></h3>
+                                <p>Lorem ipsum dolor sitamet consectetur, adipisicing elit. Corrupti,
+                                    suscipit quaerat.
+                                    Laboriosam, nostrum praesentium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-auto">
+                        <div class="about-self">
+                            <div class="icon">
+                                <span class="fa fa-cogs"></span>
+                            </div>
+                            <div class="y-text text-center py-3">
+                                <h3 class="text-capitalize d"><a href="">high quality services</a></h3>
+                                <p>Lorem ipsum dolor sitamet consectetur, adipisicing elit. Corrupti,
+                                    suscipit quaerat.
+                                    Laboriosam, nostrum praesentium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- request call back form -->
+
+    <section class="request-form">
+        <div class="container py-5 p-0">
+            <div class="row p-5">
+                <div class="col-lg-6 col-md-6 col-auto"></div>
+                <div class="col-lg-6 col-md-6 col-auto m-auto request">
+                    <div class="request-form-input">
+                        <h6 class="text-uppercase fw-bold">landform</h6>
+                        <h2 class="text-capitalize fw-bold">request call back courses.</h2>
+                        <form action="#" class="py-3">
+                            <div class="row py-2">
+                                <input type="text" placeholder="Your Name" class="form-control user-input px-3"
+                                    required>
+                            </div>
+                            <div class="row py-2">
+                                <input type="text" placeholder="Email" class="form-control user-input px-3" required>
+                            </div>
+                            <div class="row py-2">
+                                <input type="text" placeholder="Phone" class="form-control user-input px-3" required>
+                            </div>
+                            <div class="row py-2">
+                                <input type="text" placeholder="Subject" class="form-control user-input px-3" required>
+                            </div>
+                            <div class="row py-4">
+                                <button class="btn btn-success">Get It Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog post -->
+    <section class="blog-post">
+        <div class="container py-5 p-0">
+            <div class="row text-center text-capitalize py-4">
+                <div class="col-lg-12">
+                    <h5 class="fw-bold pb-1">view our latest</h5>
+                    <h1 class="fw-bolder">blog posts</h1>
+                </div>
+            </div>
+            <div class="row blog1">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img src="images/blog1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="blog-text py-3 text-capitalize">
+                            <h2><a href="">blog post title</a></h2>
+                            <div class="row pb-2">
+                                <div class="col-3">
+                                    <i class="bi bi-person-fill"></i>
+                                    <span class="u-b-text">By Admin</span>
+                                </div>
+                                <div class="col-3">
+                                    <i class="bi bi-heart"></i>
+                                    <span class="u-b-text">6 Likes</span>
+                                </div>
+                                <div class="col-3">
+                                    <i class="bi bi-chat-dots"></i>
+                                    <span class="u-b-text">9 comments</span>
+                                </div>
+                                <div class="col-3"></div>
+                            </div>
+                            <p class="py-3 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                                quos
+                                rem, nisi eaque
+                                rerum excepturi eligendi. Consequuntur tenetur, qui iusto dolor aliquam similique
+                                distinctio perferendis incidunt! Minima aperiam mollitia voluptate!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="blog">
+                        <div class="blog-img">
+                            <img src="images/g3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="blog-text py-3 text-capitalize">
+                            <h2><a href="">blog post title</a></h2>
+                            <div class="row pb-2">
+                                <div class="col-3">
+                                    <i class="bi bi-person-fill"></i>
+                                    <span class="u-b-text">By Admin</span>
+                                </div>
+                                <div class="col-3">
+                                    <i class="bi bi-heart"></i>
+                                    <span class="u-b-text">9 Likes</span>
+                                </div>
+                                <div class="col-3">
+                                    <i class="bi bi-chat-dots"></i>
+                                    <span class="u-b-text">7 comments</span>
+                                </div>
+                                <div class="col-3"></div>
+                            </div>
+                            <p class="py-3 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quos
+                                rem, nisi eaque
+                                rerum excepturi eligendi. Consequuntur tenetur, qui iusto dolor aliquam similique
+                                distinctio perferendis incidunt! Minima aperiam mollitia voluptate!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- our stats -->
+    <section class="our-stats">
+        <div class="container-fluid p-0">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6 col-md-6 col-auto text-white text-capitalize px-5 py-sm-5 py-5">
+                    <h2>our stats</h2>
+                    <h1>we handle everything for you!</h1>
+                </div>
+                <div class="col-lg-6 col-md-6 col-auto p-0 m-0">
+                    <div class="right-text px-5">
+                        <div class="row py-5">
+                            <div class="col-6">
+                                <div class="counts">
+                                    <div class="icon pb-3">
+                                        <i class="bi bi-emoji-smile"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>2000+</h3>
+                                        <p class="pb-5">happy customers</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="counts">
+                                    <div class="icon pb-3">
+                                        <i class="bi bi-hammer"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>160</h3>
+                                        <p class="pb-5">services done</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="counts">
+                                    <div class="icon pb-3">
+                                        <i class="bi bi-house-fill"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>150</h3>
+                                        <p class="pb-5">projects completed</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="counts">
+                                    <div class="icon pb-3">
+                                        <i class="bi bi-people-fill"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h3>100+</h3>
+                                        <p class="pb-5">technician expert</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- our plans -->
+    <section class="our-plans">
+        <div class="container py-5 p-0">
+            <div class="row">
+                <div class="col-lg-12 text-center text-capitalize">
+                    <h5 class="fw-bold">our plans</h5>
+                    <h1 class="fw-bolder">pricing info</h1>
+                </div>
+            </div>
+            <div class="plans-flex-box p-5">
+                <div class="plans-inner-flex">
+                    <div class="p-text text-uppercase text-center mb-5">
+                        <p class="p-title m-0">basic plan</p>
+                    </div>
+                    <div class="p-amt text-center">
+                        <span class="amt"><sup>$</sup>39<sub>/month</sub></span>
+                    </div>
+                    <div>
+                        <ul class="p-0 py-4">
+                            <li><span class="fa-solid fa-check"></span> Consectetuer adipiscing</li>
+                            <li><span class="fa-solid fa-check"></span> Dolor sit amet</li>
+                            <li><span class="fa-solid fa-check"></span> Lorem ipsom dolor</li>
+                        </ul>
+                    </div>
+                    <div class="btn-signin">
+                        <button class="signin">Sign in</button>
+                    </div>
+                </div>
+                <div class="plans-inner-flex flex-scale">
+                    <h5 class="popular text-uppercase">popular</h5>
+                    <div class="p-text active text-uppercase text-center mb-5">
+                        <p class="p-title m-0">silver plan</p>
+                    </div>
+                    <div class="p-amt text-center">
+                        <span class="amt"><sup>$</sup>69<sub>/month</sub></span>
+                    </div>
+                    <div>
+                        <ul class="p-0 py-4">
+                            <li><span class="fa-solid fa-check"></span> Consectetuer adipiscing</li>
+                            <li><span class="fa-solid fa-check"></span> Dolor sit amet</li>
+                            <li><span class="fa-solid fa-check"></span> Lorem ipsom dolor</li>
+                        </ul>
+                    </div>
+                    <div class="btn-signin">
+                        <button class="signin">Sign in</button>
+                    </div>
+                </div>
+                <div class="plans-inner-flex">
+                    <div class="p-text text-uppercase text-center mb-5">
+                        <p class="p-title m-0">gold plan</p>
+                    </div>
+                    <div class="p-amt text-center">
+                        <span class="amt"><sup>$</sup>99<sub>/month</sub></span>
+                    </div>
+                    <div>
+                        <ul class="p-0 py-4">
+                            <li><span class="fa-solid fa-check"></span> Consectetuer adipiscing</li>
+                            <li><span class="fa-solid fa-check"></span> Dolor sit amet</li>
+                            <li><span class="fa-solid fa-check"></span> Lorem ipsom dolor</li>
+                        </ul>
+                    </div>
+                    <div class="btn-signin">
+                        <button class="signin">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- our clients -->
+    <section class="our-clients">
+        <div class="container py-3">
+            <div class="row text-center py-5">
+                <p class="text-capitalize fs-5 fw-bold client-title">our clients</p>
+                <h1 class="text-capitalize text-white fw-bolder">what people say</h1>
+            </div>
+            <div class="row">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <div class="col-lg-12">
+                        <div class="tab-content m-5" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="c1" role="tabpanel"
+                                aria-labelledby="list-c1-list">
+                                <div class="bg-white w-50 m-auto fs-4 p-5 text-center rounded-2 c-review">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut aperiam culpa ipsum
+                                        assumenda tempore soluta voluptatem minus magnam itaque et reiciendis debitis
+                                        similique sequi, pariatur magni ducimus impedit.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="c2" role="tabpanel" aria-labelledby="list-c2-list">
+                                <div class="bg-white w-50 m-auto fs-4 p-5 text-center rounded-2 c-review">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut aperiam culpa ipsum
+                                        assumenda tempore soluta voluptatem minus magnam itaque et reiciendis debitis
+                                        similique sequi, pariatur magni ducimus impedit.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="c3" role="tabpanel" aria-labelledby="list-c3-list">
+                                <div class="bg-white w-50 m-auto fs-4 p-5 text-center rounded-2 c-review">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut aperiam culpa ipsum
+                                        assumenda tempore soluta voluptatem minus magnam itaque et reiciendis debitis
+                                        similique sequi, pariatur magni ducimus impedit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 p-0">
+                                <a class="list-group-item list-group-item-action active" id="list-c1-list"
+                                    data-bs-toggle="list" href="#c1" role="tab" aria-controls="list-c1">
+                                    <div class="row client-details py-3">
+                                        <div class="col-sm-4 col-md-4 col-lg-2 col-4">
+                                            <img src="images/c1.jpg" alt="" class="img-fluid rounded-5">
+                                        </div>
+                                        <div class="col-6 text-capitalize">
+                                            <h6 class="fw-bold pb-2">smith roy</h6>
+                                            <p>customer 1</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 p-0">
+                                <a class="list-group-item list-group-item-action" id="list-c2-list"
+                                    data-bs-toggle="list" href="#c2" role="tab" aria-controls="list-c2">
+                                    <div class="row client-details py-3">
+                                        <div class="col-sm-4 col-md-4 col-lg-2 col-4">
+                                            <img src="images/c2.jpg" alt="" class="img-fluid rounded-5">
+                                        </div>
+                                        <div class="col-6 text-capitalize">
+                                            <h6 class="fw-bold pb-2">lara grill</h6>
+                                            <p>customer 2</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 p-0">
+                                <a class="list-group-item list-group-item-action" id="list-c3-list"
+                                    data-bs-toggle="list" href="#c3" role="tab" aria-controls="list-c3">
+                                    <div class="row client-details py-3">
+                                        <div class="col-sm-4 col-md-4 col-lg-2 col-4">
+                                            <img src="images/c3.jpg" alt="" class="img-fluid rounded-5">
+                                        </div>
+                                        <div class="col-6 text-capitalize">
+                                            <h6 class="fw-bold pb-2">smith edward</h6>
+                                            <p>customer 3</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact">
+        <div class="container py-5">
+            <div class="row py-3 contact-grid">
+                <div class="col-lg-6">
+                    <h1 class="fw-bolder w-75 pb-3">Get Early Contact to LandForm</h1>
+                    <p class="text-muted text-capitalize fw-bold">for online appointment please call us today</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contactno">
+                        <div class="num fw-bold">
+                            <span class="fa-solid fa-mobile-android"></span> +1234567890
+                        </div>
+                        <div class="option fw-bold">
+                            <span>or</span>
+                        </div>
+                        <div class="btn">
+                            <button class="btn text-capitalize fw-bold">get free quote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container py-5">
+            <div class="row py-5 g-3 footer-border">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto px-lg-5 px-2">
+                    <h1 class="text-uppercase fw-bolder"><a href="">landform</a></h1>
+                    <p class="fs-5 pb-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h4 class="text-capitalize fw-bold text-white pb-4">subscribe to receive our best posts once a month
+                    </h4>
+                    <form action="#">
+                        <div class="input-group">
+                            <input type="text" placeholder="Enter Your email" class="form-control email">
+                            <button class="btn btn-success input-group-text">
+                                <span class="fa-solid fa-paper-plane"></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 col-auto">
+                    <h4 class="text-capitalize text-white fw-bolder pb-4">our services</h4>
+                    <ul class="text-capitalize p-0">
+                        <li class="pb-1">
+                            <span class="fa-solid fa-angles-right"></span>
+                            <a href="" class="text-white">spring & fall cleanup</a>
+                        </li>
+                        <li class="pb-1">
+                            <span class="fa-solid fa-angles-right"></span>
+                            <a href="" class="text-white">snow & ice removal</a>
+                        </li>
+                        <li class="pb-1">
+                            <span class=" fa-solid fa-angles-right"></span>
+                            <a href="" class="text-white">lawn & garden care</a>
+                        </li>
+                        <li class="pb-1">
+                            <span class="fa-solid fa-angles-right"></span>
+                            <a href="" class="text-white">irrigation & drainage</a>
+                        </li>
+                        <li class="pb-1">
+                            <span class="fa-solid fa-angles-right"></span>
+                            <a href="" class="text-white">stone & hardscaping</a>
+                        </li>
+                        <li class="pb-1">
+                            <span class="fa-solid fa-angles-right"></span>
+                            <a href="" class="text-white">planting & removal</a>
+                        </li>
+                        <li class="pb-1">
+                            <span class="fa-solid fa-angles-right"></span>
+                            <a href="" class="text-white">spring & fall cleanup</a>
+                        </li>
+                        <li class="pb-1">
+                            <span class="fa-solid fa-angles-right"></span>
+                            <a href="" class="text-white">snow & ice removal</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-auto">
+                    <h4 class="text-capitalize text-white fw-bold pb-4">latest news</h4>
+                    <div class="ftr_img">
+                        <div class="lside">
+                            <img src="images/img4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="rside pt-1">
+                            <a href="">landscaping adds value to your property</a>
+                            <h6 class="text-white pt-1">Oct 03,2019</h6>
+                        </div>
+                    </div>
+                    <div class="ftr_img">
+                        <div class="lside">
+                            <img src="images/g2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="rside pt-1">
+                            <a href="">landscaping adds value to your property</a>
+                            <h6 class="text-white pt-1">Oct 03,2019</h6>
+                        </div>
+                    </div>
+                    <div class="ftr_img">
+                        <div class="lside">
+                            <img src="images/blog1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="rside pt-1">
+                            <a href="">landscaping adds value to your property</a>
+                            <h6 class="text-white pt-1">Oct 03,2019</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 col-auto">
+                    <h4 class="text-capitalize text-white fw-bold pb-4">quick links</h4>
+                    <ul class="p-0">
+                        <li class="pb-1">
+                            <span class="fa-solid fa-angles-right"></span>
+                            <a href="" class="text-white">Home</a>
+                        </li>
+                        <li class="pb-1">
+                            <span class="fa-solid fa-angles-right"></span>
+                            <a href="" class="text-white">About</a>
+                        </li>
+                        <li class="pb-1">
+                            <span class="fa-solid fa-angles-right"></span>
+                            <a href="" class="text-white">What We Offer</a>
+                        </li>
+                        <li class="pb-1">
+                            <span class="fa-solid fa-angles-right"></span>
+                            <a href="" class="text-white">Team</a>
+                        </li>
+                        <li class="pb-1">
+                            <span class="fa-solid fa-angles-right"></span>
+                            <a href="" class="text-white">Get in touch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- bottom footer -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <ul class="list-inline text-capitalize p-0">
+                        <li class="list-inline-item"><a href="" class="text-white">privacy policy</a></li>
+                        <li class="list-inline-item"><a href="" class="text-white">terms of service</a></li>
+                        <li class="list-inline-item"><a href="" class="text-white">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-auto">
+                    <div class="social-icons">
+                        <div class="icons">
+                            <a href="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Facebook"
+                                class="text-white"><span class="fa-brands fa-facebook-f"></span></a>
+                            <a href="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Twitter"
+                                class="text-white"><span class="fa-brands fa-twitter"></span></a>
+                            <a href="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Pinterest"
+                                class="text-white"><span class="fa-brands fa-pinterest"></span></a>
+                            <a href="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Instagram"
+                                class="text-white"><span class="fa-brands fa-instagram"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="text-white text-end">&copy; 2020.All rights reserved</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- sign up Modal -->
+    <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="reg-page">
+                        <form action="#">
+                            <div class="row py-2 reg-fields">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                                    <label for="" class="form-label">Name</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-auto">
+                                    <input type="text" name="" id="fname" class="form-control">
+                                </div>
+                            </div>
+                            <!-- radio button -->
+                            <div class="row py-2 reg-fields">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                                    <label for="" class="form-label">Gender</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-auto">
+                                    <input type="radio" name="gen" id="" class="form-check-input">Male
+                                    <input type="radio" name="gen" id="" class="form-check-input">Female
+                                </div>
+                            </div>
+                            <!-- date -->
+                            <div class="row py-2 reg-fields">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                                    <label for="doj" class="form-label">Date of Join</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-auto">
+                                    <input type="date" name="" id="doj" class="form-control">
+                                </div>
+                            </div>
+                            <!-- textarea -->
+                            <div class="row py-2 reg-fields">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                                    <label for="address" class="form-label">Address</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-auto">
+                                    <textarea name="" id="addr" cols="30" rows="4" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <!-- select -->
+                            <div class="row py-2 reg-fields">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                                    <label for="city" class="form-label">City</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-auto">
+                                    <select name="" id="" class="form-select">
+                                        <option value="">--- Select ---</option>
+                                        <option value="">Surat</option>
+                                        <option value="">Navsari</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- checkbox -->
+                            <div class="row py-2 reg-fields">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                                    <label for="experience" class="form-label">Experience</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-auto">
+                                    <div class="form-check-inline">
+                                        <input type="checkbox" name="" id="chkbox" class="form-check-input">
+                                        <label for="" class="form-check-label">1 year</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="checkbox" name="" id="chkbox" class="form-check-input">
+                                        <label for="" class="form-check-label">2 year</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="checkbox" name="" id="chkbox" class="form-check-input">
+                                        <label for="" class="form-check-label">3 year</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="checkbox" name="" id="chkbox" class="form-check-input">
+                                        <label for="" class="form-check-label">more than 5 year</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- email id -->
+                            <div class="row py-2 reg-fields">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                                    <label for="email" class="form-label">Email</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-auto">
+                                    <div class="input-group">
+                                        <input type="text" name="" id="email" class="form-control">
+                                        <!-- <label for="" class="input-group-text">@gmail.com</label> -->
+                                        <button class="btn btn-primary input-group-text">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- password -->
+                            <div class="row py-2 reg-fields">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                                    <label for="password" class="form-label">Password</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-auto">
+                                    <input type="password" name="" id="pass" class="form-control">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success">Save changes</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sign in modal -->
+    <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12 p-2">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                            </div>
+                            <div class="col-12 p-2">
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword"
+                                        placeholder="Password">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                            </div>
+                            <div class="col-12 p-2">
+                                <button class="btn btn-outline-primary">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- jquery cdn js file -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- popper js cdn for Tooltip -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js>"></script>
+    <!-- Bootstrap cdn js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+        // enable Tooltip
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

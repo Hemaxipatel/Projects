@@ -1,0 +1,909 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ysabeau&display=swap');
+
+/* ===================== common css ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ysabeau", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Josefin Sans";
+    margin: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* =================== header navigation =================== */
+header {
+    box-shadow: 0px 0px 5px 0px gray;
+    /* position: fixed; */
+    z-index: 999;
+    width: 100%;
+    background: transparent;
+    /* backdrop-filter: blur(10px); */
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.header-fixed {
+    background-color: #dbf469cb !important;
+    box-shadow: 0px 0px 5px 0px rgb(238, 238, 9) !important;
+    position: fixed;
+    z-index: 999;
+    /* width: 100%; */
+    /* backdrop-filter: blur(10px); */
+    -webkit-backdrop-filter: blur(10px);
+
+}
+
+header .navbar-nav {
+    justify-content: end !important;
+    width: 100%;
+}
+
+/* header .navbar-nav a {
+    color: #2a7d2e;
+    font-weight: 700 !important;
+} */
+
+header .navbar .logo {
+    color: #2a7d2e;
+    font-weight: 700 !important;
+}
+
+header .navbar-nav a.active {
+    color: #2a7d2e !important;
+}
+
+header .navbar-brand {
+    color: white;
+    font-weight: 700 !important;
+}
+
+header .navbar-nav a:hover {
+    color: #2a7d2e;
+}
+
+/* ===========swiper slider homepage ============= */
+.homepage .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.homepage .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+}
+
+/* .homepage .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+.homepage .slider1 {
+    background-image: url(../images/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.homepage .slider1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(49, 47, 47, 0.579);
+    z-index: -1;
+}
+
+.homepage .slider2 {
+    background-image: url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 100px;
+    width: 100%;
+
+}
+
+.homepage .slider2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(49, 47, 47, 0.579);
+    z-index: -1;
+
+}
+
+.homepage .slider3 {
+    background-image: url(../images/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 100px;
+    width: 100%;
+
+}
+
+.homepage .slider3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(49, 47, 47, 0.579);
+    z-index: -1;
+}
+
+.homepage .slider4 {
+    background-image: url(../images/banner4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 100px;
+    width: 100%;
+
+}
+
+.homepage .slider4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(49, 47, 47, 0.579);
+    z-index: -1;
+}
+
+.homepage .swiper-scrollbar {
+    opacity: 1 !important;
+    background-color: rgba(255, 255, 255, 0.621);
+    margin-bottom: 20px;
+}
+
+.homepage .swiper-scrollbar-drag {
+    background-color: white;
+    /* top: -46px; */
+}
+
+/* ============= farming-grid ================== */
+/* .farming-grid img {
+    height: 250px;
+    width: 400px;
+} */
+
+.farming-grid .farming {
+    position: relative;
+    /* height: 250px; */
+    /* width: 400px; */
+    margin: auto;
+}
+
+.farming-grid .farming .farming-t {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #30b136d6;
+    color: white;
+    display: grid;
+    place-content: center;
+    height: 0%;
+    width: 100%;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.farming-grid .farming:hover .farming-t {
+    height: 100%;
+}
+
+.farming-grid .farming .inner-txt {
+    transition: 0.5s all ease;
+    transform: scaleX(0);
+}
+
+.farming-grid .farming:hover .inner-txt {
+    height: 100%;
+    transform: scaleY(1);
+}
+
+.farming-grid .farming-b-txt p {
+    width: 96%;
+    margin: auto;
+}
+
+.farming-grid .farming-b-txt a:hover {
+    color: #2a7d2e !important;
+}
+
+/* ================ about farming ================ */
+.about-farming {
+    background-color: #f2fbf2;
+}
+
+.about-farming h4 {
+    color: #2a7d2e;
+}
+
+.about-farming .about-farm-tab {
+    display: flex;
+    gap: 10px;
+}
+
+.about-farming .list-group-item {
+    color: black;
+    background-color: transparent;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    font-weight: 700 !important;
+}
+
+.about-farming .list-group-item.active {
+    border-bottom: 5px solid #2a7d2e !important;
+    border-top: 0 !important;
+    color: #2a7d2e !important;
+}
+
+.about-farming .link {
+    border-bottom: 5px solid #2a7d2e;
+    width: 14.5%;
+    padding-bottom: 7px;
+}
+
+.about-farming .link a {
+    color: black !important;
+    font-weight: 700;
+}
+
+.about-farming .link a:hover {
+    color: #2a7d2e !important;
+}
+
+/* ========================== ask your self =========================== */
+.yourself h5 {
+    color: #2a7d2e;
+    font-weight: 700;
+}
+
+.yourself h1 {
+    font-weight: 800;
+}
+
+.yourself .about-self .icon {
+    height: 80px;
+    width: 80px;
+    font-size: 25px;
+    border: 4px solid #2a7d2e;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin: auto;
+    color: #2a7d2e;
+}
+
+.yourself .about-self h3 a {
+    color: black;
+    font-weight: 700;
+}
+
+.yourself .about-self:hover .icon {
+    background-color: #2a7d2e;
+    color: white;
+}
+
+.yourself .about-self p {
+    font-size: 18px;
+}
+
+/* ================== request call back form ================== */
+
+.request-form {
+    background-image: url(../images/banner4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.request-form::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #070A0CB5;
+    z-index: -1;
+}
+
+.request-form-input {
+    background-color: #fff;
+    padding: 60px;
+    /* margin: auto; */
+}
+
+.request-form-input h6 {
+    color: #2a7d2e;
+}
+
+.request-form-input .user-input {
+    height: 45px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 40px;
+}
+
+.request-form-input button {
+    height: 50px;
+    width: 100%;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #2a7d2e;
+    border: 1px solid transparent;
+}
+
+.request-form-input .user-input:focus {
+    box-shadow: none;
+    border: 2px solid #2a7d2e;
+}
+
+.request-form-input button:hover {
+    background-color: #5c5a5a;
+    border: 1px solid transparent;
+}
+
+/* ====================== blog post ================== */
+.blog-post h5 {
+    color: #2a7d2e;
+}
+
+.blog-post .blog-text h2 a {
+    font-size: 30px;
+    font-weight: 700 !important;
+    color: #323b43;
+}
+
+.blog-post .blog-text {
+    color: #59626a;
+}
+
+.blog-post p {
+    width: 90%;
+}
+
+.blog-post i {
+    color: #2a7d2e !important;
+}
+
+/* ========================= our stats ================ */
+.our-stats {
+    background-image: url(../images/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.our-stats::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #070A0CB5 !important;
+    z-index: -1;
+}
+
+.our-stats .right-text {
+    background-color: #f2fbf2;
+    padding: 100px 0px;
+}
+
+.our-stats h2 {
+    font-weight: 700;
+}
+
+.our-stats h1 {
+    font-size: 45px;
+    font-weight: 700;
+    width: 85%;
+}
+
+.our-stats .icon i {
+    font-size: 35px;
+    color: #2a7d2e;
+}
+
+.our-stats .text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #323b43;
+}
+
+.our-stats .text p {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #59626a;
+}
+
+/* ================== our plans =================== */
+.our-plans h5 {
+    color: #2a7d2e;
+    font-weight: 700;
+}
+
+.our-plans .plans-flex-box {
+    display: flex;
+    justify-content: center;
+}
+
+.our-plans .plans-flex-box .plans-inner-flex {
+    border: 2px solid #dcefdc;
+    padding: 50px;
+}
+
+.our-plans .plans-inner-flex .p-text {
+    background-color: #bdffc0;
+    padding: 10px;
+    text-align: center;
+}
+
+.our-plans .plans-flex-box .plans-inner-flex .p-text.active {
+    background-color: #2a7d2e !important;
+    color: white;
+}
+
+.our-plans .plans-inner-flex .p-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.our-plans .plans-flex-box .plans-inner-flex .popular {
+    font-size: 13px;
+    color: #5c5a5a;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.our-plans .p-amt {
+    padding-bottom: 10px;
+}
+
+.our-plans .p-amt .amt {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.our-plans .plans-flex-box ul {
+    line-height: 32px;
+    font-size: 18px;
+}
+
+.our-plans .plans-flex-box li span {
+    padding-right: 25px;
+    color: #2a7d2e;
+}
+
+.our-plans .p-amt sup {
+    font-size: 25px;
+}
+
+.our-plans .p-amt sub {
+    font-size: 16px;
+    color: #c3cac3;
+}
+
+.our-plans .plans-flex-box .btn-signin {
+    padding: 50px;
+    text-align: center;
+}
+
+.our-plans .plans-flex-box .signin {
+    height: 40px;
+    width: 100%;
+    color: white;
+    background-color: #323b43;
+    text-transform: capitalize;
+    font-size: 16px;
+    border: none;
+}
+
+.our-plans .flex-scale {
+    transform: scaleY(1.1);
+    background-color: white;
+}
+
+.our-plans .plans-flex-box .signin:hover {
+    background-color: #2a7d2e;
+}
+
+/* ================ our clients =============== */
+.our-clients {
+    background-image: url(../images/banner5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.our-clients::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(7, 10, 12, 0.66);
+    z-index: -1;
+}
+
+.our-clients .client-title {
+    color: #2a7d2e;
+}
+
+.our-clients .list-group-item {
+    background-color: white;
+    border-top: 5px solid #ace1ac;
+}
+
+.our-clients .list-group-item.active {
+    background-color: white !important;
+    color: black;
+    border-top: 5px solid #2a7d2e;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.our-clients .list-group .c-review {
+    width: 50%;
+}
+
+/* ============================= contact section ================= */
+.contact .contact-grid {
+    display: flex;
+    align-items: center;
+}
+
+.contact .contactno {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact .contactno .num {
+    font-size: 23px;
+    color: #323b43;
+}
+
+.contact .contactno .option {
+    font-size: 22px;
+    color: #2a7d2e;
+}
+
+.contact .contactno .btn {
+    font-size: 20px;
+    color: white;
+    background-color: #2a7d2e;
+    transition: 0.5s all ease;
+}
+
+.contact .contactno .btn:hover {
+    background-color: #323b43;
+}
+
+/* ==================== footer ================= */
+
+footer {
+    background-image: url(../images/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(7, 10, 12, 0.66);
+    z-index: -1;
+}
+
+footer h1 a {
+    color: #2a7d2e;
+    font-weight: bolder !important;
+}
+
+footer form .email {
+    border-radius: 0;
+}
+
+footer form .email:focus {
+    box-shadow: none;
+}
+
+footer form .btn-success {
+    border-radius: 0;
+    width: 55px;
+}
+
+footer .fa-angles-right {
+    color: #2a7d2e;
+}
+
+footer ul li a:hover {
+    color: rgb(160, 157, 157) !important;
+}
+
+footer form .btn-success span:hover {
+    color: #25282ae8;
+}
+
+footer .ftr_img {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+footer .ftr_img .lside {
+    flex: 1;
+}
+
+footer .ftr_img .rside {
+    flex: 1;
+}
+
+footer .ftr_img a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+footer .ftr_img a:hover {
+    color: #c3cac3;
+}
+
+footer .footer-border::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #59626a;
+    display: block;
+}
+
+footer .social-icons .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px !important;
+}
+
+footer .social-icons .icons a span:hover {
+    color: #2a7d2e;
+}
+
+/* ==================== media query ==================== */
+@media (max-width:576px) {
+
+    .farming-grid .farming-b-txt p {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .about-farming .imgfarming {
+        justify-content: center;
+    }
+
+    .our-stats h1 {
+        font-size: 30px;
+    }
+
+    .our-stats {
+        background-position: unset;
+        background-size: 100%;
+    }
+
+    .our-stats .right-text {
+        padding: 10px 0px;
+    }
+
+    .our-plans .plans-flex-box {
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+        /* margin: 0px 10px; */
+    }
+
+    .our-plans .plans-inner-flex {
+        width: 100%;
+    }
+
+    .our-plans .flex-scale {
+        transform: scale(1);
+        background-color: white;
+    }
+
+    .our-clients .c-review {
+        width: 100% !important;
+    }
+
+    .contact .contactno {
+        justify-content: start;
+    }
+}
+
+@media (min-width:576px) {
+
+    /* 
+    .homepage {
+        margin-right: 0
+    } */
+
+    .our-plans .plans-flex-box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0px;
+    }
+
+    .our-plans .flex-scale {
+        transform: scale(1);
+        background-color: white;
+    }
+
+    .our-clients .c-review {
+        width: 100% !important;
+    }
+
+    .contact .contactno {
+        justify-content: start;
+    }
+}
+
+@media (min-width:768px) {
+    .farming-grid .f-grid {
+        width: 350px;
+        text-align: center;
+    }
+
+    .about-farming .tab-content h1 {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 15px;
+    }
+
+    .about-farming .tab-content .p-text {
+        color: gray;
+        font-size: 18px;
+    }
+
+    .about-farming .tab-content .link {
+        width: 32%;
+    }
+
+    .about-farming .list-group .about-farm-tab .list-group-item {
+        font-size: 18px;
+    }
+
+    .request-form .request {
+        margin: 0px 138px;
+    }
+
+    .blog-post .blog1 {
+        display: flex;
+        /* flex-direction: column; */
+        margin: 0px 48px;
+    }
+
+    .our-stats {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .our-plans .plans-flex-box {
+        display: flex;
+        flex-direction: row;
+        row-gap: 0px;
+    }
+
+    .our-plans .flex-scale {
+        transform: scale(1.1);
+        background-color: white;
+    }
+
+    .our-plans .plans-flex-box .signin {
+        height: 40px;
+        width: 80px;
+    }
+
+    .our-plans .plans-flex-box ul {
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    .our-plans .plans-flex-box li span {
+        padding-right: 10px;
+    }
+}
+
+@media (min-width:992px) {
+    .our-plans .plans-flex-box ul {
+        line-height: 35px;
+        font-size: 18px;
+    }
+
+    .our-plans .plans-flex-box li span {
+        padding-right: 10px;
+    }
+
+    .contact .contactno {
+        justify-content: end;
+    }
+}
+
+@media (min-width:1200px) {
+    .about-farming .tab-content .link {
+        width: 14.5%;
+    }
+
+    /* .blog-post .blog1 {
+        display: flex;
+    } */
+
+    .our-clients .c-review {
+        width: 50% !important;
+    }
+}
